@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="iconos_padding">10dp</dimen>
+    <dimen name="controles_margen">15dp</dimen>
+    <dimen name="texto_mediano">20sp</dimen>
+    <dimen name="texto_chico">16sp</dimen>
+    <dimen name="tamanio_imagen">200dp</dimen>
+    <dimen name="elevacion_card">10dp</dimen>
+    <dimen name="radius_card">20dp</dimen>
+    <dimen name="elevacion_max_card">12dp</dimen>
+</resources>

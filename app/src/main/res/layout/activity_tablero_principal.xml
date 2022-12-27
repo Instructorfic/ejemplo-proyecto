@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TableroPrincipalActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPromedioGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/elevacion_card"
+        app:cardCornerRadius="@dimen/radius_card"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="@dimen/elevacion_max_card"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id="@+id/txtPromedioGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/texto_mediano"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/controles_margen"
+            android:layout_gravity="bottom|end"
+            />
+
+        <TextView
+            android:id="@+id/txtPromedioGeneralDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_promedio_general"
+            android:layout_gravity="start|center"
+            android:layout_margin="@dimen/controles_margen"
+            android:textSize="@dimen/texto_mediano"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+           />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAlumnosAprobados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/radius_card"
+        app:cardElevation="@dimen/elevacion_card"
+        app:cardMaxElevation="@dimen/elevacion_max_card"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@id/cardPromedioGeneral"
+        >
+
+        <TextView
+            android:id="@+id/txtNumeroAlumnosAprobados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/controles_margen"
+            android:textSize="@dimen/texto_mediano"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNumeroAlumnosAprobadosDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_margin="@dimen/controles_margen"
+            android:text="@string/txt_alumnos_aprobados"
+            android:textSize="@dimen/texto_mediano"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAlumnosReprobados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/radius_card"
+        app:cardElevation="@dimen/elevacion_card"
+        app:cardMaxElevation="@dimen/elevacion_max_card"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@id/cardAlumnosAprobados"
+        >
+
+        <TextView
+            android:id="@+id/txtNumeroAlumnosReprobados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/controles_margen"
+            android:textSize="@dimen/texto_mediano"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNumeroAlumnosReprobadosDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_margin="@dimen/controles_margen"
+            android:text="@string/txt_alumnos_reprobados"
+            android:textSize="@dimen/texto_mediano"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtNombreProfesor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/controles_margen"
+        android:textSize="@dimen/texto_mediano"
+        app:layout_constraintTop_toBottomOf="@id/cardAlumnosReprobados" />
+    <TextView
+        android:id="@+id/txtNombreCurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/texto_mediano"
+        android:layout_margin="@dimen/controles_margen"
+        app:layout_constraintTop_toBottomOf="@id/txtNombreProfesor"
+        />
+    <Button
+        android:id="@+id/btnListaAlumnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_lista_alumnos"
+        android:layout_margin="@dimen/controles_margen"
+        android:drawableStart="@drawable/ic_lista"
+        android:drawableTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNombreCurso"
+        android:backgroundTint="@color/color_fic"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

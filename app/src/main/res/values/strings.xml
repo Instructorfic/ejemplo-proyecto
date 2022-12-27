@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <string name="et_nombre_usuario">Nombre de usuario</string>
+    <string name="et_contrasenia_usuario">Contraseña</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión</string>
+    <string name="btn_lista_alumnos">Lista de alumnos</string>
+    <string name="btn_calificacion_alumno">Calificación Curso</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="txt_promedio_general">Promedio General</string>
+    <string name="txt_materias_aprobadas">Materias aprobadas</string>
+    <string name="txt_materias_reprobadas">Materias reprobadas</string>
+    <string name="txt_alumnos_aprobados">Alumnos aprobados</string>
+    <string name="txt_alumnos_reprobados">Alumnos reprobados</string>
+
+
+</resources>
